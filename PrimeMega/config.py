@@ -26,7 +26,7 @@ class Config(object):
    EVENT_LOGS = os.getenv("EVENT_LOGS")  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
    ERROR_LOGS = os.getenv("ERROR_LOGS")
     # RECOMMENDED
-   SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI")  # needed for any database modules with elephant sql or postgresql
+   SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI").replace("postgres://", "postgresql://", 1)  # needed for any database modules with elephant sql or postgresql
    LOAD = []
    NO_LOAD = ["rss", "cleaner", "connection", "math"]
    WEBHOOK = False
