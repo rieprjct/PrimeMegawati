@@ -34,7 +34,7 @@ wikipedia
 markdown2
 telethon==1.24.0
 telegraph
-heroku3
+heroku3==5.2.1
 spamwatch
 alphabet_detector
 pyrate-limiter
