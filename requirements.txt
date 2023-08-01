@@ -88,3 +88,4 @@ hiredis
 pretty_errors
 requests_html
 qrcode
+httpcore==0.17.3
